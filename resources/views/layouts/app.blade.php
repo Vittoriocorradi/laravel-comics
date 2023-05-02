@@ -10,7 +10,8 @@
 </head>
 <body>
     {{-- Header --}}
-    @include('partials.header')
+    @include('partials.header-top')
+    @include('partials.header-bottom')
     {{-- /Header --}}
 
     {{-- Main --}}
@@ -20,7 +21,8 @@
     {{-- /Main --}}
 
     {{-- Footer --}}
-    @include('partials.footer')
+    @include('partials.footer-top')
+    @include('partials.footer-bottom')
     {{-- /Footer --}}
 </body>
 </html>
