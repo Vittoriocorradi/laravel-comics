@@ -1,0 +1,26 @@
+header .bottom-header .logo {
+    height: 5rem;
+
+    img {
+        display: block;
+        height: 100%;
+    }
+}
+
+header .bottom-header {
+    @include my-container(80rem);
+
+    li {
+        height: 100%;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #464646;
+            font-weight: 700;
+            padding: 1.0625rem;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    }
+}

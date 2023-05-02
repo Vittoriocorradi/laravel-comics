@@ -1,0 +1,4 @@
+@mixin my-container($width: 80rem) {
+    max-width: $width;
+    margin: 0 auto;
+}
