@@ -1,9 +1,16 @@
 @extends('layouts.app')
 
 @section('page-title')
-    Template
+    DC Comics
 @endsection
 
 @section('page-main')
-    <h1>Template</h1>
+    <section class="background">
+        <div class="container">
+          <h2>current series</h2>
+        </div>
+    </section>
+    <div class="big-container">
+        
+    </div>
 @endsection
