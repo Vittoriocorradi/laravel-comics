@@ -1,0 +1,34 @@
+.footer-nav {
+    background-color: $primary-color;
+
+    a {
+        display: inline-block;
+        padding: 3.125rem .625rem;
+        text-decoration: none;
+
+        .link {
+            display: flex;
+            align-items: center;
+        
+
+            .img {
+                height: 3.4375rem;
+                margin-right: .9375rem;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .small-img {
+                height: 2.1875rem;
+                margin-right: .9375rem;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+    }
+}
