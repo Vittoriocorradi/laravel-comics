@@ -89,3 +89,54 @@
         }
     }
 }
+
+// Footer bottom
+
+.footer-social {
+    background-color: #303030;
+
+    .big-container {
+
+    padding: 1.875rem 0;
+    
+        div:first-child {
+
+            button {
+                display: block;
+                padding: .9375rem;
+                border: .125rem solid $primary-color;
+                color: #fff;
+                background-color: inherit;
+                text-transform: uppercase;
+                font-family: inherit;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $primary-color;
+                }
+            }
+        }
+        .icons-group {
+            margin-left: auto;
+
+            .follow-us {
+                text-transform: uppercase;
+                color: $primary-color;
+                margin-right: .625rem;
+                font-weight: 900;
+            }
+
+            .icon {
+                margin-left: 1.125rem;
+                height: 2.1875rem;
+
+                &:hover {
+                    filter: brightness(500%);
+                    scale: 1.1;
+                }
+            }
+
+
+        }
+    }
+}
