@@ -5,7 +5,7 @@
 @endsection
 
 @section('page-main')
-    <section class="background">
+    <section class="jumbotron">
         <div class="container">
           <h2>current series</h2>
         </div>
