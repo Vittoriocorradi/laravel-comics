@@ -9,7 +9,7 @@
         {{-- Nav --}}
         <ul class="d-flex nav">
             <li><a href="#">characters</a></li>
-            <li><a href="#">comics</a></li>
+            <li><a href="#" class="active">comics</a></li>
             <li><a href="#">movies</a></li>
             <li><a href="#">tv</a></li>
             <li><a href="#">games</a></li>
@@ -22,7 +22,7 @@
         {{-- Search input --}}
         <form action="GET">
             <label for="search"></label>
-            <input type="text" id="search">
+            <input type="text" id="search" placeholder="search">
         </form>
     </div>
 </div>

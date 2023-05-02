@@ -1,5 +1,5 @@
 <section class="footer-nav">
-    <ul class="big-container d-flex justify-content-between align-items-center">
+    <ul class="big-container d-flex justify-content-between align-items-center text-uppercase text-light">
         <li>
             <a>
                 <div class="link">

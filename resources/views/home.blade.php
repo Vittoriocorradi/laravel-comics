@@ -17,7 +17,7 @@
                     <div class="img">
                         <img src="{{ $comic['thumb'] }}" alt="">
                     </div>
-                    <div>{{ $comic['title'] }}</div>
+                    <div class="text-uppercase mt-2">{{ $comic['title'] }}</div>
                 </div>
             @endforeach
         </div>
