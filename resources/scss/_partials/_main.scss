@@ -23,3 +23,40 @@ section .container{
         color: #fff;
     }
 }
+
+// Main
+
+.comics-list {
+    background-color: #1c1c1c;
+
+    .ms-card {
+        width: calc((100% / 6) - 3.125rem);
+        color: #fff;
+        margin: 1.5625rem;
+
+        .img {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    button {
+        background-color: $primary-color;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: inherit;
+        font-weight: 700;
+        padding: .625rem 3.75rem;
+        cursor: pointer;
+        border: none;
+        transition: scale 0.2s, background-color 0.2s, color 0.2s;
+    
+        &:hover {
+            background-color: #fff;
+            color: #464646;
+            scale: 1.1;
+        }
+    }
+}
