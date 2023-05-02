@@ -1,3 +1,16 @@
+.big-container {
+    @include my-container(80rem);
+}
+
+header .top-header {
+
+    background-color: $primary-color;
+    
+    div {
+        padding: .4375rem 0 .4375rem 3.75rem;
+    }
+}
+
 header .bottom-header .logo {
     height: 5rem;
 
@@ -8,7 +21,6 @@ header .bottom-header .logo {
 }
 
 header .bottom-header {
-    @include my-container(80rem);
 
     li {
         height: 100%;
