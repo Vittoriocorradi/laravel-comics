@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Route alla pagina iniziale
+
 Route::get('/', function () {
 
     $data = [
@@ -20,4 +23,15 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
-});
+})->name('home');
+
+
+// Route al dettaglio del fumetto
+
+Route::get('/comics-detail/{index}', function($index) {
+
+    $comics = config('comics');         //Dati di tutti i fumetti
+    $comics_detail = $comics[$index];   //Dati di un singolo fumetto (dato l'indice)
+
+    return view('comics-detail', compact('comics_detail'));
+})->name('comics-detail');
