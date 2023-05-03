@@ -42,7 +42,7 @@
             {{-- Descrizione del fumetto --}}
             {{-- Pubblicità --}}
             <section class="advertisement col-4">
-                <h3 class="text-end text-uppercase fs-6 text-secondary">advertisement</h3>
+                <h3 class="text-end text-uppercase text-secondary">advertisement</h3>
                 <div class="ads-img">
                     <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
                 </div>
@@ -113,27 +113,27 @@
     {{-- Links --}}
     <section class="row justify-content-center comics-detail-links">
         <div class="col-9 row">
-            <div class="col-3 d-flex justify-content-between">
+            <div class="col-3 d-flex justify-content-between link-box">
                 <h4 class="text-uppercase">Digital Comics</h4>
-                <div class="link-img">
+                <div class="link-img align-self-center">
                     <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="Digital Comics">
                 </div>
             </div>
-            <div class="col-3 d-flex justify-content-between">
+            <div class="col-3 d-flex justify-content-between link-box">
                 <h4 class="text-uppercase">shop dc</h4>
-                <div class="link-img">
+                <div class="link-img align-self-center">
                     <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="Shop DC">
                 </div>
             </div>
-            <div class="col-3 d-flex justify-content-between">
+            <div class="col-3 d-flex justify-content-between link-box">
                 <h4 class="text-uppercase">comic shop locator</h4>
-                <div class="link-img">
+                <div class="link-img align-self-center">
                     <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="Shop Locator">
                 </div>
             </div>
-            <div class="col-3 d-flex justify-content-between">
+            <div class="col-3 d-flex justify-content-between link-box">
                 <h4 class="text-uppercase">subscriptions</h4>
-                <div class="link-img">
+                <div class="link-img align-self-center">
                     <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="Subscriptions">
                 </div>
             </div>

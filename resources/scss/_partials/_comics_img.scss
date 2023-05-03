@@ -71,15 +71,29 @@
 // Link utili
 
 .comics-detail-links {
-    color: #dcdcdc;
+    color: #9f9f9f;
     background-color: #f6f6f6;
+    border-top: .0625rem solid #e3e3e3;
 
-    .link-img {
-        height: 2.3125rem;
-        width: 1.875rem;
+    .link-box {
+        padding: 1.0625rem 1.0625rem;
+        border-right: .0625rem solid #e3e3e3;
 
-        img {
-            filter: invert(15%);
+        &:first-child {
+            border-left: .0625rem solid #e3e3e3;
+        }
+
+        h4 {
+            font-size: 0.7em;
+        }
+
+        .link-img {
+            height: 2.8125rem;
+            width: 2.1875rem;
+    
+            img {
+                filter: invert(15%);
+            }
         }
     }
 }
