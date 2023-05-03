@@ -10,11 +10,11 @@
 @section('page-main')
 
     {{-- Jumbotron --}}
-    <section class="jumbotron">
+    {{-- <section class="jumbotron">
         <div class="container">
           <h2>current series</h2>
         </div>
-    </section>
+    </section> --}}
     {{-- /Jumbotron --}}
 
     {{-- Contenuto principale --}}
