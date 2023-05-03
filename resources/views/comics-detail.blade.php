@@ -20,12 +20,12 @@
 
     {{-- Sezione centrale --}}
     <div class="central-section row justify-content-center">
-        <div class="col-9 row">
+        <div class="col-9 row gx-5">
             {{-- Descrizione del fumetto --}}
             <section class="comic-description col-8">
-                <h1>{{ $comics_detail['title'] }}</h1>
+                <h1 class="fs-3 mb-4 text-uppercase">{{ $comics_detail['title'] }}</h1>
                 {{-- Disponibilità --}}
-                <div class="row availability">
+                <div class="row availability m-0">
                     <div class="col-9 d-flex justify-content-between availability-price">
                         <div>U.S.Price: <span class="text-light">{{ $comics_detail['price'] }}</span></div>
                         <div class="text-uppercase">available</div>
@@ -35,14 +35,14 @@
                     </div>
                 </div>
                 {{-- /Disponibilità --}}
-                <p class="comics-description">
+                <p class="comics-description mt-4">
                     {{ $comics_detail['description'] }}
                 </p>
             </section>
             {{-- Descrizione del fumetto --}}
             {{-- Pubblicità --}}
             <section class="advertisement col-4">
-                <h3 class="text-end text-uppercase">advertisement</h3>
+                <h3 class="text-end text-uppercase fs-6 text-secondary">advertisement</h3>
                 <div class="ads-img">
                     <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
                 </div>
@@ -57,10 +57,10 @@
         <div class="col-9 row">
             {{-- Colonna info sinistra --}}
             <div class="col-6">
-                <h2>Talent</h2>
+                <h2 class="info-border">Talent</h2>
                 {{-- Disegnatori --}}
-                <div class="row justify-content-between">
-                    <div class="col-4">Art by:</div>
+                <div class="row justify-content-between m-0 pt-2 pb-3 info-border">
+                    <div class="col-4 p-0">Art by:</div>
                     <div class="col-8">
                         @foreach ($comics_detail['artists'] as $artist)
                             <a href="#">{{ $artist }}</a>
@@ -69,8 +69,8 @@
                 </div>
                 {{-- /Disegnatori --}}
                 {{-- Scrittori --}}
-                <div class="row justify-content-between">
-                    <div class="col-4">Written by:</div>
+                <div class="row justify-content-between m-0 pt-3 pb-3 info-border">
+                    <div class="col-4 p-0">Written by:</div>
                     <div class="col-8">
                         @foreach ($comics_detail['writers'] as $writer)
                             <a href="#">{{ $writer }}</a>
@@ -83,24 +83,24 @@
 
             {{-- Colonna info destra --}}
             <div class="col-6">
-                <h2>Specs</h2>
+                <h2 class="info-border">Specs</h2>
                 {{-- Serie --}}
-                <div class="row">
-                    <div class="col-4">Series:</div>
+                <div class="row m-0 pt-2 pb-3 info-border">
+                    <div class="col-4 p-0">Series:</div>
                     <div class="col-8">
-                        <a href="#">{{ $comics_detail['series'] }}</a>
+                        <a class="text-uppercase" href="#">{{ $comics_detail['series'] }}</a>
                     </div>
                 </div>
                 {{-- /Serie --}}
                 {{-- Prezzo --}}
-                <div class="row">
-                    <div class="col-4">U.S. Price:</div>
+                <div class="row m-0 pt-3 pb-3 info-border">
+                    <div class="col-4 p-0">U.S. Price:</div>
                     <div class="col-8">{{ $comics_detail['price'] }}</div>
                 </div>
                 {{-- /Prezzo --}}
                 {{-- Data saldi --}}
-                <div class="row">
-                    <div class="col-4">On Sale Date:</div>
+                <div class="row m-0 pt-3 pb-3 info-border">
+                    <div class="col-4 p-0">On Sale Date:</div>
                     <div class="col-8">{{ $comics_detail['sale_date'] }}</div>
                 </div>
                 {{-- /Data saldi --}}
