@@ -1,3 +1,5 @@
+// Box immagine fumetto
+
 .comics-img-background {
     height: 5rem;
     background-color: $primary-color;
@@ -13,9 +15,37 @@
             top: -11.25rem;
             left: 0;
         }
-    }
-    
+    } 
 }
+
+// Sezione centrale
+
+.central-section {
+    padding: 4.6875rem 0 4.375rem;
+
+    .comic-description {
+
+        .availability {
+            background-color: #55ba59;
+            color: #fff;
+            border-bottom: .125rem solid #357739;
+
+            &-price {
+                padding: .9375rem 1.5625rem;
+                color: #bafd9c;
+                border-right: .125rem solid #357739;
+                height: 100%;
+            }
+
+            &-check {
+                padding: .9375rem 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Link utili
 
 .comics-detail-links {
     color: #dcdcdc;

@@ -10,7 +10,7 @@
 
     {{-- Immagine del fumetto --}}
     <section class="comics-img-background row justify-content-center">
-        <div class="col-8 comics-img-col">
+        <div class="col-9 comics-img-col">
             <div class="comics-img-box">
                 <img src="{{ $comics_detail['thumb'] }}" alt="{{ $comics_detail['title'] }}">
             </div>
@@ -20,17 +20,17 @@
 
     {{-- Sezione centrale --}}
     <div class="central-section row justify-content-center">
-        <div class="col-8 row">
+        <div class="col-9 row">
             {{-- Descrizione del fumetto --}}
             <section class="comic-description col-8">
                 <h1>{{ $comics_detail['title'] }}</h1>
                 {{-- Disponibilità --}}
                 <div class="row availability">
-                    <div class="col-9 d-flex justify-content-between">
-                        <div>{{ $comics_detail['price'] }}</div>
+                    <div class="col-9 d-flex justify-content-between availability-price">
+                        <div>U.S.Price: <span class="text-light">{{ $comics_detail['price'] }}</span></div>
                         <div class="text-uppercase">available</div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 availability-check">
                         Check Availability
                     </div>
                 </div>
@@ -54,7 +54,7 @@
 
     {{-- Info fumetto --}}
     <section class="comics-info row justify-content-center">
-        <div class="col-8 row">
+        <div class="col-9 row">
             {{-- Colonna info sinistra --}}
             <div class="col-6">
                 <h2>Talent</h2>
@@ -112,7 +112,7 @@
 
     {{-- Links --}}
     <section class="row justify-content-center comics-detail-links">
-        <div class="col-8 row">
+        <div class="col-9 row">
             <div class="col-3 d-flex justify-content-between">
                 <h4 class="text-uppercase">Digital Comics</h4>
                 <div class="link-img">
