@@ -1,5 +1,4 @@
 {{-- Dettaglio di un fumetto --}}
-
 @extends('layouts.app')
 
 {{-- Titolo della pagina --}}

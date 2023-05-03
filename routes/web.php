@@ -31,7 +31,13 @@ Route::get('/', function () {
 Route::get('/comics-detail/{index}', function($index) {
 
     $comics = config('comics');         //Dati di tutti i fumetti
+
+    // Controllo del parametro
+    if ($index > count($comics) - 1) {
+        abort(404);
+    }
+
     $comics_detail = $comics[$index];   //Dati di un singolo fumetto (dato l'indice)
 
     return view('comics-detail', compact('comics_detail'));
-})->name('comics-detail');
+})->name('comics-detail')->where('index', '[0-9]+');
