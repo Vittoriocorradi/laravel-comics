@@ -80,7 +80,7 @@
                 {{-- /Scrittori --}}
             </div>
             {{-- /Colonna info sinistra --}}
-            
+
             {{-- Colonna info destra --}}
             <div class="col-6">
                 <h2>Specs</h2>
@@ -109,5 +109,36 @@
         </div>
     </section>
     {{-- /Info fumetto --}}
+
+    {{-- Links --}}
+    <section class="row justify-content-center comics-detail-links">
+        <div class="col-8 row">
+            <div class="col-3 d-flex justify-content-between">
+                <h4 class="text-uppercase">Digital Comics</h4>
+                <div class="link-img">
+                    <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="Digital Comics">
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-between">
+                <h4 class="text-uppercase">shop dc</h4>
+                <div class="link-img">
+                    <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="Shop DC">
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-between">
+                <h4 class="text-uppercase">comic shop locator</h4>
+                <div class="link-img">
+                    <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="Shop Locator">
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-between">
+                <h4 class="text-uppercase">subscriptions</h4>
+                <div class="link-img">
+                    <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="Subscriptions">
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- /Links --}}
 
 @endsection

@@ -16,3 +16,16 @@
     }
     
 }
+
+.comics-detail-links {
+    color: #dcdcdc;
+
+    .link-img {
+        height: 2.3125rem;
+        width: 1.875rem;
+
+        img {
+            filter: invert(15%);
+        }
+    }
+}
