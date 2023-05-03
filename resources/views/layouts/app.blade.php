@@ -26,7 +26,10 @@
 
     {{-- Footer --}}
     <footer>
-        @include('partials.footer-top')
+        {{-- Includi solo se nella home --}}
+        @if (Route::currentRouteName() === 'home')
+            @include('partials.footer-top')
+        @endif    
         @include('partials.footer-mid')
         @include('partials.footer-bottom')
     </footer>
